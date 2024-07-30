@@ -11,7 +11,7 @@ export default function Navbar() {
 					</p>
 				</div>
 
-				<ul className='flex gap-[60px] items-center'>
+				<ul className='flex gap-[60px] items-center font-medium'>
 					<li className=''>
 						<a href='' className=''>
 							Home
@@ -41,12 +41,12 @@ export default function Navbar() {
 
 				<div className='flex gap-10 items-center'>
 					<img
-						src='/001-facebook.jpg'
+						src='/Nav/001-facebook.jpg'
 						alt=''
 						className='h-[19.84pxpx] w-[9.92px]'
 					/>
-					<img src='/Path.jpg' alt='' className='h-[17.88px] w-[22px]' />
-					<img src='/004-instagram.jpg' alt='' className='size-[22px]' />
+					<img src='/Nav/Path.jpg' alt='' className='h-[17.88px] w-[22px]' />
+					<img src='/Nav/004-instagram.jpg' alt='' className='size-[22px]' />
 				</div>
 			</div>
 		</nav>

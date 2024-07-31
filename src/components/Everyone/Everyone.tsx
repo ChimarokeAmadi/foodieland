@@ -1,6 +1,6 @@
 export default function Everyone() {
 	return (
-		<div className='container flex pt-[143px] justify-between'>
+		<div className='container flex pt-[143px] justify-between pb-40'>
 			<div className='mt-[169px] mb-[72px] w-fit flex flex-col justify-between space-y-[72px]'>
 				<div className='space-y-6 '>
 					<p className='font-semibold text-[48px] tracking-[-4%] leading-[58.09px]'>

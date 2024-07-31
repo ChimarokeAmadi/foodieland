@@ -25,7 +25,7 @@ export default function Everyone() {
 						className='mr-[50px] h-[597px] w-[660px]'
 					/>
 
-					<div className='absolute bg-gradient-to-t from-[#E7F9FD] top-[97px] bottom-0 left-[59px] -right-[50px] min-h-[500px] min-w-[651px] -z-10'></div>
+					<div className='absolute bg-gradient-to-t from-[#E7F9FD] top-[97px] bottom-0 left-[59px] -right-[50px] min-h-[500px] min-w-[651px] -z-10 rounded-[30px]'></div>
 					<img
 						src='/Everyone/tomato.png'
 						alt=''

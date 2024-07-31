@@ -40,7 +40,7 @@ export default function Categories() {
 			<div className='flex gap-10 w-full justify-between'>
 				{categories.map((category, index) => (
 					<div
-						className={`flex flex-col justify-center gap-[50px] px-10 pb-[30px] w-[180px] ${
+						className={`flex flex-col justify-center gap-[50px] px-10 pb-[30px] w-[1fr] ${
 							(index == 0 &&
 								"bg-gradient-to-t from-[#7082461A] bg-opacity-[10%] rounded-3xl ") ||
 							(index == 1 &&

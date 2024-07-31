@@ -3,6 +3,7 @@ import Categories from "@/components/Categories/Categories";
 import Simple from "@/components/Simple/Simple";
 import Everyone from "@/components/Everyone/Everyone";
 import Instagram from "@/components/Instagram/Instagram";
+import TryRecipe from "@/components/TryRecipe/TryRecipe";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 			<Simple />
 			<Everyone />
 			<Instagram />
+			<TryRecipe />
 		</main>
 	);
 }

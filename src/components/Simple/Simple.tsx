@@ -47,7 +47,9 @@ export default function Simple() {
 								<img src={recipe.image} alt='' className='rounded-3xl' />
 								<LikeButton />
 							</div>
-							<p className=''>{recipe.name}</p>
+							<p className='text-[24px] font-semibold leading-8 tracking-[-4%]'>
+								{recipe.name}
+							</p>
 							<div className='flex gap-6 '>
 								<div className='flex gap-[10px] items-center'>
 									<svg

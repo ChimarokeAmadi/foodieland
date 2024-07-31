@@ -3,8 +3,17 @@ import { Lobster } from "next/font/google";
 const lobster = Lobster({ subsets: ["latin"], weight: "400" });
 import recipes from "../recipes/recipes";
 import LikeButton from "../LikeButton/LikeButton";
+import { useContext } from "react";
+import { LikedFoodContext } from "@/contexts/likedFoodContext";
 
 export default function Simple() {
+	const { likedFood, setLikedFood } = useContext(LikedFoodContext);
+	const handleLikeFood = (id: number) => {
+		if (likedFood.includes(id)) {
+			let filteredIds = likedFood.filter((foodId) => foodId !== id);
+			setLikedFood(filteredIds);
+		} else setLikedFood([...likedFood, id]);
+	};
 	return (
 		<div className='container'>
 			<p className='font-semibold text-[48px] leading-[58.09px] tracking-[-4%] text-center mb-6'>
@@ -45,7 +54,10 @@ export default function Simple() {
 							className='bg-gradient-to-t from-[#E7F9FD] p-4 pb-8 space-y-6 rounded-3xl'>
 							<div className='relative'>
 								<img src={recipe.image} alt='' className='rounded-3xl' />
-								<LikeButton />
+								<LikeButton
+									isLiked={likedFood.includes(recipe.id)}
+									handleLikeFood={() => handleLikeFood(recipe.id)}
+								/>
 							</div>
 							<p className='text-[24px] font-semibold leading-8 tracking-[-4%]'>
 								{recipe.name}

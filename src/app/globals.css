@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: "Eudoxus Sans";
+	font-family: "EudoxusSans";
 	src: url("/src/font/EudoxusSans-Regular-BF659b6cb1d4714.ttf");
 }

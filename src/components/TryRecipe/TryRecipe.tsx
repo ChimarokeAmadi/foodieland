@@ -1,7 +1,18 @@
+"use client";
 import LikeButton from "../LikeButton/LikeButton";
 import recipes2 from "../recipes2/recipes2";
+import { useContext } from "react";
+import { LikedFoodContext } from "@/contexts/likedFoodContext";
 
 export default function TryRecipe() {
+	const { likedFood, setLikedFood } = useContext(LikedFoodContext);
+	const handleLikeFood = (id: number) => {
+		if (likedFood.includes(id)) {
+			let filteredIds = likedFood.filter((foodId) => foodId !== id);
+			setLikedFood(filteredIds);
+		} else setLikedFood([...likedFood, id]);
+	};
+
 	return (
 		<div className='container py-40 flex flex-col items-center gap-20'>
 			<div className='flex gap-[153px] items-center'>
@@ -22,7 +33,10 @@ export default function TryRecipe() {
 								alt=''
 								className='rounded-[20px] w-full h-fit'
 							/>
-							<LikeButton />
+							<LikeButton
+								isLiked={likedFood.includes(recipe.id)}
+								handleLikeFood={() => handleLikeFood(recipe.id)}
+							/>
 						</div>
 						<p className='text-[18px] leading-[26px] font-semibold tracking-[-4%] mb-6'>
 							{recipe.name}

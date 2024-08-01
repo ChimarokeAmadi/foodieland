@@ -17,6 +17,53 @@ export default function HeroSection() {
 						Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqut enim ad minim
 					</p>
+					<div className='flex gap-4'>
+						<span className='flex gap-[10px] bg-black bg-opacity-5 py-2 px-4 rounded-[30px]'>
+							<Image
+								alt='icon'
+								src='/Hero/Timer.png'
+								width={660}
+								height={660}
+								style={{
+									width: "24px",
+								}}
+							/>
+
+							<p className='font-medium text-[14px] opacity-60'>30 Minutes</p>
+						</span>
+						<span className='flex gap-[10px] bg-black bg-opacity-5 py-2 px-4 rounded-[30px]'>
+							<Image
+								alt='icon'
+								src='/Hero/ForkKnife.png'
+								width={660}
+								height={660}
+								style={{
+									width: "24px",
+								}}
+							/>
+
+							<p className='font-medium text-[14px] opacity-60'>Chicken</p>
+						</span>
+					</div>
+
+					<div className='flex w-full justify-between'>
+						<div className='flex gap-4'>
+							<Image
+								alt='icon'
+								src='/Hero/Ellipse 2.png'
+								width={660}
+								height={640}
+								style={{
+									width: "50px",
+								}}
+							/>
+
+							<div className=''>
+								<p className='font-bold'>John Smith</p>
+								<p className='opacity-60 text-[14px]'>15 March 2022</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div className=''>
 					<Image

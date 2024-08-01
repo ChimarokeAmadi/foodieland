@@ -19,22 +19,22 @@ export default function Navbar() {
 						</Link>
 					</li>
 					<li className=''>
-						<Link href='' className=''>
+						<Link href='#recipes' className=''>
 							Recipes
 						</Link>
 					</li>
 					<li className=''>
-						<Link href='/Instagram' className=''>
+						<Link href='#blog' className=''>
 							Blog
 						</Link>
 					</li>
 					<li className=''>
-						<Link href='' className=''>
+						<Link href='#contact' className=''>
 							Contact
 						</Link>
 					</li>
 					<li className=''>
-						<Link href='' className=''>
+						<Link href='#about' className=''>
 							About us
 						</Link>
 					</li>

@@ -8,7 +8,7 @@ import Deliciousness from "@/components/Deliciousness/Deliciousness";
 
 export default function Home() {
 	return (
-		<main className=''>
+		<main className='scroll-smooth'>
 			<HeroSection />
 			<Categories />
 			<Simple />

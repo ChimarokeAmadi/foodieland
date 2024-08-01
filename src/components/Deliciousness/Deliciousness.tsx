@@ -1,6 +1,6 @@
 export default function Deliciousness() {
 	return (
-		<div className='container py-40'>
+		<div className='container py-40' id='#contact'>
 			<div className='px-[330px] py-20 bg-[#E7F9FD] rounded-[60px] relative overflow-hidden'>
 				<div className='mx-auto flex flex-col items-center'>
 					<p className='font-semibold text-[48px] text-center mb-6'>

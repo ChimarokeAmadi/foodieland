@@ -5,7 +5,7 @@ export default function LikeButton(props: {
 	handleLikeFood: () => void;
 }) {
 	return (
-		<div
+		<button
 			className='bg-white absolute rounded-full p-3 top-5 right-5 '
 			onClick={props.handleLikeFood}>
 			<svg
@@ -19,6 +19,6 @@ export default function LikeButton(props: {
 					fill={`${props.isLiked ? "red" : "#DBE2E5"}`}
 				/>
 			</svg>
-		</div>
+		</button>
 	);
 }

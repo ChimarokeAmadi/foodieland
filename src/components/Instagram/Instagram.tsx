@@ -15,7 +15,9 @@ export default function Instagram() {
 	];
 
 	return (
-		<div className='container flex flex-col items-center py-20 gap-20 bg-gradient-to-t from-[#E7F9FD]'>
+		<div
+			className='container flex flex-col items-center py-20 gap-20 bg-gradient-to-t from-[#E7F9FD]'
+			id='#blog'>
 			<div className='flex flex-col gap-6 items-center w-[860px]'>
 				<p className='text-[48px] font-semibold leading-[58.09px] -tracking-[4%] text-center'>
 					Check out @foodieland on Instagram

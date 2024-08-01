@@ -4,6 +4,7 @@ import recipes from "../recipes/recipes";
 import { useContext } from "react";
 import { LikedFoodContext } from "@/contexts/likedFoodContext";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function TryRecipe() {
 	const { likedFood, setLikedFood } = useContext(LikedFoodContext);
@@ -29,7 +30,9 @@ export default function TryRecipe() {
 				{recipes.slice(9, 17).map((recipe, index) => (
 					<div key={index} className='bg-gradient-to-t  rounded-3xl'>
 						<div className='relative mb-4'>
-							<img
+							<Image
+								height={200 * 2}
+								width={290 * 2}
 								src={recipe.image}
 								alt=''
 								className='rounded-[20px] w-full h-fit'

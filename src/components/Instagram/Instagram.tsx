@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Instagram() {
 	const images = [
 		{
@@ -30,7 +32,9 @@ export default function Instagram() {
 
 			<div className='flex justify-between w-full'>
 				{images.map((image, index) => (
-					<img
+					<Image
+						height={445.44}
+						width={290}
 						key={index}
 						src={image.url}
 						alt=''

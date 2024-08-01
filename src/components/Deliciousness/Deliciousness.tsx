@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Deliciousness() {
 	return (
 		<div className='container py-40' id='#contact'>
@@ -22,9 +24,11 @@ export default function Deliciousness() {
 						</button>
 					</span>
 
-					<img
+					<Image
+						height={400.08}
+						width={409.54}
 						src='/Deliciousness/salad2.png'
-						alt=''
+						alt='image'
 						className='h-[400.08px] w-[409.54px] absolute -bottom-[155.74px] -left-[30.58px] top-[66.49px]'
 					/>
 					<img
@@ -32,9 +36,11 @@ export default function Deliciousness() {
 						alt=''
 						className='absolute bottom-[80px] right-[275.47px] top-[249px] w-[120.85px] h-[150.96px]'
 					/>
-					<img
+					<Image
+						height={250.62}
+						width={300}
 						src='/Deliciousness/Photo-plate.png'
-						alt=''
+						alt='image'
 						className='h-[250.62px] w-[300px] absolute bottom-0 right-0'
 					/>
 				</div>

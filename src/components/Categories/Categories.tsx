@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Categories() {
 	const categories = [
 		{
@@ -56,10 +58,18 @@ export default function Categories() {
 						key={index}>
 						<div className='before:blur-lg before:translate-x-3 before:translate-y-5'>
 							<div className='relative'>
-								<img src={category.image} alt='' className={`size-[100px]  `} />
-								<img
+								<Image
 									src={category.image}
-									alt=''
+									alt='image'
+									width={800}
+									height={800}
+									className={`size-[100px]  `}
+								/>
+								<Image
+									width={800}
+									height={800}
+									src={category.image}
+									alt='image'
 									className={`size-[100px]  absolute top-5 left-5 opacity-[50%] -z-10 blur-lg`}
 								/>
 							</div>

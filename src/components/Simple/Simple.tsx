@@ -6,6 +6,7 @@ import LikeButton from "../LikeButton/LikeButton";
 import { useContext } from "react";
 import { LikedFoodContext } from "@/contexts/likedFoodContext";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Simple() {
 	const { likedFood, setLikedFood } = useContext(LikedFoodContext);
@@ -31,16 +32,20 @@ export default function Simple() {
 						<div
 							key={index}
 							className='bg-gradient-to-t from-[#1D483B] to-[#357355] pt-10 relative flex flex-col gap-[285px] items-center -z-[2] pb-8'>
-							<img
+							<Image
+								width={600}
+								height={600}
 								src='/Simple/Star 1.png'
-								alt=''
+								alt='image'
 								className='h-full w-full absolute top-0 bottom-0 left-0 right-0 -z-[1]'
 							/>
 							<p
 								className={`text-white text-center ${lobster.className} text-[24px] leading-[30px] w-[172px]`}>
 								Don’t forget to eat healthy food
 							</p>
-							<img
+							<Image
+								width={354}
+								height={336}
 								src='/Simple/plate.png'
 								alt=''
 								className='absolute top-[98px] bottom-0 w-[354px] h-[336px]'
@@ -52,16 +57,22 @@ export default function Simple() {
 					) : (
 						<div
 							key={index}
-							className='bg-gradient-to-t from-[#E7F9FD] p-4 pb-8 space-y-6 rounded-3xl'>
-							<div className='relative'>
-								<img src={recipe.image} alt='' className='rounded-3xl' />
+							className='bg-gradient-to-t from-[#E7F9FD] p-4 pb-8  rounded-3xl'>
+							<div className='relative pb-6'>
+								<Image
+									width={368}
+									height={250}
+									src={recipe.image}
+									alt=''
+									className='rounded-3xl'
+								/>
 								<LikeButton
 									isLiked={likedFood.includes(recipe.id)}
 									handleLikeFood={() => handleLikeFood(recipe.id)}
 								/>
 							</div>
 							<Link href={`recipe/${recipe.id}`}>
-								<p className='text-[24px] font-semibold leading-8 tracking-[-4%]'>
+								<p className='text-[24px] font-semibold leading-8 tracking-[-4%] my-6'>
 									{recipe.name}
 								</p>
 								<div className='flex gap-6 '>

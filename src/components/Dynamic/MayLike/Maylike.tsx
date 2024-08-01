@@ -34,7 +34,8 @@ export default function MayLike() {
 								handleLikeFood={() => handleLikeFood(recipe.id)}
 							/>
 						</div>
-						<Link href={`recipe/${recipe.id}`}>
+						<Link
+							href={`https://foodieland-uju7.vercel.app/recipe/${recipe.id}`}>
 							<p className='text-[18px] leading-[26px] font-semibold tracking-[-4%] mb-6'>
 								{recipe.name}
 							</p>

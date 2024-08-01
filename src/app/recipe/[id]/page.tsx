@@ -3,6 +3,7 @@ import Deliciousness from "@/components/Deliciousness/Deliciousness";
 import Directions from "@/components/Dynamic/Directions/Directions";
 import Hero from "@/components/Dynamic/Hero/Hero";
 import Ingredients from "@/components/Dynamic/Ingredients/Ingredients";
+import MayLike from "@/components/Dynamic/MayLike/Maylike";
 import recipes from "@/components/recipes/recipes";
 import { notFound } from "next/navigation";
 
@@ -26,6 +27,7 @@ export default function page(props: { params: { id: string } }) {
 			<Ingredients />
 			<Directions />
 			<Deliciousness />
+			<MayLike />
 		</div>
 	);
 }

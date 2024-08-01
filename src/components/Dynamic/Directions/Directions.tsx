@@ -9,8 +9,8 @@ export default function Directions() {
 				<div className=' flex  gap-[50px] py-[33px] border-b '>
 					<Checkbox id='term1' className='translate-y-[6px]' />
 					<div className=''>
-						<ol className='list-decimal text-[24px]'>
-							<li>
+						<ol className='list-[1.] text-[24px]'>
+							<li className=''>
 								<div className=' flex flex-col gap-6'>
 									<label
 										htmlFor='term1'
@@ -30,7 +30,7 @@ export default function Directions() {
 										alt=''
 										className=''
 									/>
-									<p className='text-[16px] opacity-60 mt-[48px]'>
+									<p className='text-[16px] opacity-60 mb-[48px]'>
 										Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
 										odit aut fugit, sed quia consequuntur magni dolores eos qui
 										ratione voluptatem sequi nesciunt. Neque porro quisquam est,

@@ -31,7 +31,9 @@ export default function Deliciousness() {
 						alt='image'
 						className='h-[400.08px] w-[409.54px] absolute -bottom-[155.74px] -left-[30.58px] top-[66.49px]'
 					/>
-					<img
+					<Image
+						height={120.85}
+						width={150.96}
 						src='/Deliciousness/rucola-png.png'
 						alt=''
 						className='absolute bottom-[80px] right-[275.47px] top-[249px] w-[120.85px] h-[150.96px]'

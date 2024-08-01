@@ -102,6 +102,18 @@ export default function HeroSection() {
 
 				<div className='absolute bg-[#E7FAFE] w-10 top-5 bottom-5 -left-20 rounded-r-3xl'></div>
 				<div className='absolute bg-[#E7FAFE] w-10 top-5 bottom-5 -right-20 rounded-l-3xl'></div>
+				<Image
+					alt='icon'
+					src='/Hero/Badge.png'
+					width={660}
+					height={660}
+					style={{
+						width: "150px",
+						position: "absolute",
+						top: "50px",
+						right: "560px",
+					}}
+				/>
 			</div>
 		</div>
 	);

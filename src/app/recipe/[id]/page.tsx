@@ -4,7 +4,6 @@ import Directions from "@/components/Dynamic/Directions/Directions";
 import Hero from "@/components/Dynamic/Hero/Hero";
 import Ingredients from "@/components/Dynamic/Ingredients/Ingredients";
 import recipes from "@/components/recipes/recipes";
-import { log } from "console";
 import { notFound } from "next/navigation";
 
 export default function page(props: { params: { id: string } }) {

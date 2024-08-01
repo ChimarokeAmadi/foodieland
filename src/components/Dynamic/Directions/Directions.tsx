@@ -7,7 +7,7 @@ export default function Directions() {
 			<div className='w-[840px]'>
 				<p className='text-[36px] font-semibold mb-8'>Directions</p>
 				<div className=' flex  gap-[50px] py-[33px] border-b '>
-					<Checkbox id='term1' className='translate-y-[6px]' />
+					<Checkbox id='term1' className='' />
 					<div className=''>
 						<ol className='list-[1.] text-[24px]'>
 							<li className=''>

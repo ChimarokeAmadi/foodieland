@@ -21,7 +21,7 @@ export const LikedFoodProvider: React.FC<LikedFoodProviderProps> = ({
 	const [likedFood, setLikedFood] = useState<number[]>(initializeState());
 
 	function initializeState() {
-		let data = window.localStorage.getItem("foodieland_like_state");
+		let data = localStorage.getItem("foodieland_like_state");
 		if (data !== null) {
 			return JSON.parse(data);
 		}
@@ -29,10 +29,7 @@ export const LikedFoodProvider: React.FC<LikedFoodProviderProps> = ({
 	}
 
 	useEffect(() => {
-		window.localStorage.setItem(
-			"foodieland_like_state",
-			JSON.stringify(likedFood)
-		);
+		localStorage.setItem("foodieland_like_state", JSON.stringify(likedFood));
 	}, [likedFood]);
 
 	return (

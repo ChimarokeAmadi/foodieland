@@ -60,10 +60,8 @@ export default function HeroSection() {
 								alt='icon'
 								src='/Hero/Ellipse 2.png'
 								width={660}
-								height={640}
-								style={{
-									width: "50px",
-								}}
+								height={660}
+								className='size-[50px]'
 							/>
 
 							<div className=''>

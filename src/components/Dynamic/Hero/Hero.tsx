@@ -10,8 +10,8 @@ export default function Hero(props: { image: string; name: string }) {
 							<Image
 								src='/Hero/Ellipse 2.png'
 								alt=''
-								height={1}
-								width={1}
+								height={600}
+								width={600}
 								className='size-[50px]'
 							/>
 							<div className='flex flex-col gap-2 justify-center'>
@@ -25,8 +25,8 @@ export default function Hero(props: { image: string; name: string }) {
 							<Image
 								src='/Dynamic/Hero/Timer.png'
 								alt='timer'
-								height={100}
-								width={100}
+								height={800}
+								width={800}
 								style={{
 									height: "24px",
 									width: "24px",
@@ -43,8 +43,8 @@ export default function Hero(props: { image: string; name: string }) {
 							<Image
 								src='/Dynamic/Hero/Timer.png'
 								alt='timer'
-								height={100}
-								width={100}
+								height={700}
+								width={700}
 								style={{
 									height: "24px",
 									width: "24px",
@@ -61,8 +61,8 @@ export default function Hero(props: { image: string; name: string }) {
 							<Image
 								src='/Hero/ForkKnife.png'
 								alt='timer'
-								height={100}
-								width={100}
+								height={700}
+								width={700}
 								style={{
 									height: "24px",
 									width: "24px",
@@ -77,8 +77,8 @@ export default function Hero(props: { image: string; name: string }) {
 						<button className='rounded-[100%] p-7 bg-[#E7FAFE] h-fit '>
 							<Image
 								src='/Dynamic/Hero/printer.png'
-								height={1}
-								width={1}
+								height={600}
+								width={600}
 								alt=''
 								className='size-6'
 							/>
@@ -91,8 +91,8 @@ export default function Hero(props: { image: string; name: string }) {
 							<Image
 								src='/Dynamic/Hero/share.png'
 								alt=''
-								height={1}
-								width={1}
+								height={700}
+								width={700}
 								className='size-6'
 							/>
 						</button>

@@ -56,7 +56,7 @@ export default function Directions() {
 					</div>
 
 					<div className='flex gap-10 py-[33px] border-b'>
-						<Checkbox id='term1' className='' />
+						<Checkbox id='term2' className='' />
 						<div className=''>
 							<ol className=' text-[24px] '>
 								<li>
@@ -64,7 +64,7 @@ export default function Directions() {
 										<label
 											htmlFor='term1'
 											className=' text-[24px] leading-[21.78px] peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-semibold'>
-											1. Lorem ipsum dolor sit amet
+											2. Lorem ipsum dolor sit amet
 										</label>
 										<p className='text-[16px] opacity-60'>
 											Nemo enim ipsam voluptatem quia voluptas sit aspernatur
@@ -82,7 +82,7 @@ export default function Directions() {
 					</div>
 
 					<div className='flex gap-10 py-[33px] border-b'>
-						<Checkbox id='term1' className='' />
+						<Checkbox id='term3' className='' />
 						<div className=''>
 							<ol className=' text-[24px] '>
 								<li>
@@ -90,7 +90,7 @@ export default function Directions() {
 										<label
 											htmlFor='term1'
 											className=' text-[24px] leading-[21.78px] peer-disabled:cursor-not-allowed peer-disabled:opacity-70 font-semibold'>
-											1. Lorem ipsum dolor sit amet
+											3. Lorem ipsum dolor sit amet
 										</label>
 										<p className='text-[16px] opacity-60'>
 											Nemo enim ipsam voluptatem quia voluptas sit aspernatur

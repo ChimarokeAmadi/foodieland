@@ -58,7 +58,7 @@ export default function Simple() {
 						<div
 							key={index}
 							className='bg-gradient-to-t from-[#E7F9FD] p-4 pb-8  rounded-3xl'>
-							<div className='relative pb-6'>
+							<div className='relative '>
 								<Image
 									width={368}
 									height={250}

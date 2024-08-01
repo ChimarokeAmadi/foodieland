@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Everyone() {
 	return (
 		<div
@@ -21,31 +23,41 @@ export default function Everyone() {
 			</div>
 			<div className=''>
 				<div className='h-full relative'>
-					<img
+					<Image
+						height={597}
+						width={660}
 						src='/Everyone/chef.png'
-						alt=''
+						alt='image'
 						className='mr-[50px] h-[597px] w-[660px]'
 					/>
 
 					<div className='absolute bg-gradient-to-t from-[#E7F9FD] top-[97px] bottom-0 left-[59px] -right-[50px] min-h-[500px] min-w-[651px] -z-10 rounded-[30px]'></div>
-					<img
+					<Image
+						height={500}
+						width={500}
 						src='/Everyone/tomato.png'
-						alt=''
+						alt='image'
 						className='size-[50px] absolute left-[34px] bottom-[124px]'
 					/>
-					<img
+					<Image
+						height={500}
+						width={500}
 						src='/Everyone/meat2.png'
-						alt=''
+						alt='image'
 						className='size-[80px] absolute left-[102px] top-[70px] -rotate-[15%]'
 					/>
-					<img
+					<Image
+						height={500}
+						width={500}
 						src='/Everyone/onion.png'
-						alt=''
+						alt='image'
 						className='size-[50px] absolute top-[97px] right-[130.76px] -rotate-[15%]'
 					/>
-					<img
+					<Image
+						height={500}
+						width={500}
 						src='/Everyone/leaf.png'
-						alt=''
+						alt='image'
 						className='size-[80px] absolute top-[167px] -right-[14px]'
 					/>
 				</div>
